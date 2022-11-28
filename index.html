@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test page Web - Portefolio 2</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajouter une font générale ICI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Copie BURGER Pierre Delaunay     -->
+        <!-- mon menu burger -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+        
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">Accueil</a></li>
+                <!-- Page about.html à créer pour décrire le site. -->
+                <li><a class="menu__item" href="about.html">A propos</a></li>                
+                <li><a class="menu__item" href="formation.html">Ma Formation</a></li>
+                <li><a class="menu__item" href="skills.html">Mes compétences</a></li>
+                <li><a class="menu__item" href="ePortefolio.html">Mon e-Portefolio</a></li>
+                <li><a class="menu__item" href="CV.html">Mon CV</a></li>
+                <!-- Page contact.html à créer -->
+                <li><a class="menu__item" href="#">Contact</a></li>
+            </ul>
+        </div>
+<!-- Fin de copie du BURGER  -->
+
+<!-- copie ancien body  -->
+                <!-- Texte d'accueil 'bonjour' -->
+                <header>
+                    <!-- photo de profil -->
+                    <div>
+                        <img class=avatar 
+                         width="100px"
+                        src="DSC_0468__1_-removebg-preview.png" alt="avatar"
+                        border-radius="90"; 
+                        >
+                    </div>                    
+
+                    <h3 class="accueil">
+                        Bonjour et bienvenue
+                    </h3>
+
+                    <div>
+                        <div>
+                            <p>
+                                Je suis 
+                            </p>
+                            
+                            <br>
+
+                            <h1 class="svg-wrapper">
+
+                                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                <!-- [OLD RECT] <rect class="shape" height="60" width="320" /> -->
+                                <rect class="shape" height="60" width="100%"></rect>
+                                </svg>
+
+                                <div class="MOI">Loïc ETHEVE</div>
+
+                            </h1>
+
+                            <p>
+                                <!-- Message principal en catch-eye pour prospection, si possible en bas de page fixe -->
+                                    <h2 class="Annonce">
+                                        <ul class=emphase>
+                                            <li>l'infographiste</li> | <li>le webdesigner</li> | <li>l'intégrateur web</li>
+                                        </ul>
+                                        
+                                        <div>
+                                            qu'il vous faut
+                                        </div>  
+                                    </h2>
+                            </p>
+                        </div>
+                    </div>
+               
+                </header>
+
+                <br>
+
+                <article>
+
+
+                    <p>
+                        <div> 
+                            Je vous invite à : 
+                        </div>
+
+                        <!-- Bouton de Call-to-action (Class=CallTA) -->
+                        <a href="ShowCanva.html">
+                            <button class="CallTA">Cliquer ici</button> 
+                        </a>
+                    </p>
+
+                    <p>
+                        pour un aperçu globale de :
+                        <!-- A aligner à gauche pour image "showup" à droite (en face) -->
+                        <ul class="global">
+                            <!-- [illustration par hover] <iframe class=showup src='https://gfycat.com/ifr/DelayedSelfreliantFeline' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe><p> <a href="https://gfycat.com/delayedselfreliantfeline">via Gfycat</a></p> -->                            
+                            <li> Mon passé, mon présent, mon futur</li>
+                            <li> Mon e-porte-folio</li>
+                            <li> Mon CV </li>
+                        </ul>
+                    </p>
+                </article>
+
+                <article>
+                    <p>
+                        <!-- A mettre en forme  -->
+                        Ou parcourez via le BURGER
+                        OU
+                        ou via les boutons suivants l'élément qui vous intéresse.
+                    </p>
+                </article>
+
+                <!-- Banière fil d'ariane - lien hypertexte à intégrer plus tard pour renvoi plus bas sur la page si landing page 
+                    OU Menu déroulant par survol, bien plus tard, si plusieurs pages -->
+                <!-- IDEE : SURVOL par la souris fait apparaitre l'image/icône correpondante 
+                    - cf : https://www.isitcode.net/survoler-un-texte-pour-afficher-une-image  -->
+                <conteneurRub class="rubriques"> 
+                    <a href="formation.html"> 
+                        <button>Ma formation</button> </a> 
+                    <a href="skills.html"> 
+                        <button>Mes compétences</button>
+                    </a>
+                    <a href="CV.html"> 
+                        <button>Mon CV</button> 
+                    </a>
+                    <a href="ePortefolio.html">
+                        <button>Mon e-portefolio</button> 
+                    </a>
+                    <a href="ShowCanva.html">
+                        <button>Ma présentation Canva (Oct.2022)</button> 
+                    </a>
+                </conteneurRub>
+
+                <!-- 3 images côtes à côte pour caroussel plus tard, reprenant les différentes parties évoqués dans le fil d'ariane. -->
+                <br> 
+                    <div> 
+                    <img class=caroussel width=50px src="icons8_who_32px.png" alt="img1-QUI?">
+                    <img class=caroussel width=50px src="icons8_internship_50px.png" alt="img2-Formation">
+                    <img class=caroussel width=50px src="icons8_visualization_skill_32px.png" alt="img3-Skills?">
+                    <img class=caroussel width=50px src="icons8_cv_80px_1.png" alt="img4-CV?">
+                    <img class=caroussel width=50px src="icons8_gallery_80px.png" alt="img5-Portefolio">
+                    </div>
+                <br>
+
+                <!-- Je vais mettre ici mes infos de contacts de sorte que ça reste fixé en bas de fold. -->
+                <footer>
+                    <h3>
+                        <span>
+                            <a href="tel: 0692276211" >0692 27 62 11 </a>
+                        </span> 
+
+                        <br>
+                <!-- Je vais essayer de rajouter un texte qui accompagne le curseur quand on survol l'élément -->
+                        <span>
+                            <a href="mailto: loic.etheve@laposte.net"> loic.etheve@laposte.net </a>
+                        </span>
+                    </h3>
+                </footer>
+<!-- fin de copie -->
+</body>
+
+</html>
