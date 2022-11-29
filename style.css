@@ -122,7 +122,7 @@ border-radius : 45px
 } 
 
 /* #li menu-item:hover{ */
-  li #menu-item{
+  #menu-item{
   color: #ECEFF1;
   width: fit-content;
   background-color: black;
