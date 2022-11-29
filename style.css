@@ -3,7 +3,8 @@ body{
     background: linear-gradient(-164deg, rgba(0,0,0,1) 28%, rgba(121,9,9,1) 81%, rgba(251,251,251,1) 167%);
     font-family: 'Titillium Web', sans-serif;
     color: #ECEFF1;
-    height: 100%;
+    /* height: 100%; */
+    min-height: 1255.95px;
     text-align: center;
 }
 
@@ -21,13 +22,14 @@ body{
 /* code pour ENCADREMENT - copié de https://codepen.io/seanmccaffery/pen/kWWxzQ */
 .svg-wrapper {
     height: 60px;
-      margin: 0 auto;
+      margin: 1px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 320px;
   }
   
+  /* code pour ligne d'encadrement -- je crois...  */
   .shape {
     fill: transparent;
     stroke-dasharray: 140 540;
@@ -119,7 +121,8 @@ background-color: black;
 border-radius : 45px
 } 
 
-#li menu-item:hover{
+/* #li menu-item:hover{ */
+  li #menu-item{
   color: #ECEFF1;
   width: fit-content;
   background-color: black;
@@ -132,6 +135,7 @@ border-radius : 45px
 /* css menu burger */
 #menu__toggle {
   opacity: 0;
+  color:rgba(0, 0, 0, .4)
 }
 #menu__toggle:checked + .menu__btn > span {
 transform: rotate(45deg);
@@ -201,4 +205,10 @@ transition-duration: .25s;
 .menu__item:hover {
 background-color: #CFD8DC;
 }
+
+      /* rajout de code pour superposition du menu burger  */
+      div #hamburger-menu {
+        position: relative; z-index: 4;
+      }
+      /* fin de rajout  */
 /* fin css menu burger */
