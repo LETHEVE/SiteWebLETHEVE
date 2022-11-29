@@ -19,63 +19,64 @@ body{
     top: -50px;
 }
 
-/* code pour ENCADREMENT - copié de https://codepen.io/seanmccaffery/pen/kWWxzQ */
-.svg-wrapper {
-    height: 60px;
-      margin: 1px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
-  }
-  
-  /* code pour ligne d'encadrement -- je crois...  */
-  .shape {
-    fill: transparent;
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-    /* [OLD] stroke: rgba(251,251,251,1); */
-    stroke: #ECEFF1;
-  }
-  
-  /* .text { */
-    /* color: #fff; */
-    /* font-family: 'Roboto Condensed'; */
-    /* font-size: 22px; */
-    /* letter-spacing: 8px; */
-    /* line-height: 32px; */
-    /* position: relative; */
-    /* top: -48px; */
-  /* } */
-  
-  @keyframes draw {
-    0% {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
-      stroke-width: 8px;
-    }
-    100% {
-      stroke-dasharray: 760;
-      stroke-dashoffset: 0;
-      stroke-width: 2px;
-    }
-  }
-  
-  .svg-wrapper:hover .shape {
-    -webkit-animation: 0.5s draw linear forwards;
-    animation: 0.5s draw linear forwards;
-  }
-/* fin de copie code ENCADREMENT*/
+                /* code pour ENCADREMENT - copié de https://codepen.io/seanmccaffery/pen/kWWxzQ */
+                .svg-wrapper {
+                    height: 60px;
+                      margin: 1px;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    /* faisait bugger la position de Loic ETHEVE */
+                    /* width: 320px; */
+                  }
+                  
+                  /* code pour ligne d'encadrement -- je crois...  */
+                  .shape {
+                    fill: transparent;
+                    stroke-dasharray: 140 540;
+                    stroke-dashoffset: -474;
+                    stroke-width: 8px;
+                    /* [OLD] stroke: rgba(251,251,251,1); */
+                    stroke: #ECEFF1;
+                  }
+                  
+                  /* .text { */
+                    /* color: #fff; */
+                    /* font-family: 'Roboto Condensed'; */
+                    /* font-size: 22px; */
+                    /* letter-spacing: 8px; */
+                    /* line-height: 32px; */
+                    /* position: relative; */
+                    /* top: -48px; */
+                  /* } */
+                  
+                  @keyframes draw {
+                    0% {
+                      stroke-dasharray: 140 540;
+                      stroke-dashoffset: -474;
+                      stroke-width: 8px;
+                    }
+                    100% {
+                      stroke-dasharray: 760;
+                      stroke-dashoffset: 0;
+                      stroke-width: 2px;
+                    }
+                  }
+                  
+                  .svg-wrapper:hover .shape {
+                    -webkit-animation: 0.5s draw linear forwards;
+                    animation: 0.5s draw linear forwards;
+                  }
+                /* fin de copie code ENCADREMENT*/
 
 .rubriques{
     color: #ECEFF1;   
 }
 
-/* Le style d'emphase ne fonctionne pas ???*/
-.emphase{
-    font-size: 50;
-}
+      /* Le style d'emphase ne fonctionne pas ???*/
+      /* .emphase{
+          font-size: 50;
+      } */
 
 h3{
   font-size: 25;
@@ -212,3 +213,33 @@ background-color: #CFD8DC;
       }
       /* fin de rajout  */
 /* fin css menu burger */
+
+/* Pour enlever les puces sur mes listes  */
+ul{
+  list-style-type: none;
+}
+
+  /* Mettre les métiers en ligne et non en colonne  */
+ul#emphase{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Mettre en noir le hover des boutons du burger */
+a.menu__item:hover{
+    color: #ECEFF1;
+    width: fit-content;
+    background-color: black;
+    border-radius : 45px;
+    text-align : center 
+}
+
+li:hover {
+  text-align: center;
+}
+
+/* ajuster la taille du fond de h3 (Découvrez ici / Bienvenue) */
+h3{
+  padding: 5px ;
+  margin-top: -2px;
+}
