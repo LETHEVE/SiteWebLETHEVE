@@ -245,7 +245,7 @@ h3{
 }
 
 /* Corrige le problème de largeur des pages secondaires (limiter la largeur de rect shape et rect svg à la taille du body) */
-head{
+.MOI{
   max-width: 1255px;
 }
 
