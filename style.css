@@ -238,8 +238,15 @@ li:hover {
   text-align: center;
 }
 
-/* ajuster la taille du fond de h3 (Découvrez ici / Bienvenue) */
+/* ajuster la taille du fond de h3 (Découvrez ici / Bienvenue) et que ca colle avec le bouton burger */
 h3{
   padding: 5px ;
   margin-top: -2px;
 }
+
+/* Corrige le problème de largeur des pages secondaires (limiter la largeur de rect shape et rect svg à la taille du body) */
+head{
+  max-width: 1255px;
+}
+
+/* fin de correction largeur */
