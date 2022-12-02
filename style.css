@@ -226,7 +226,9 @@ ul#emphase{
 }
 
 /* Mettre en noir le hover des boutons du burger */
-a.menu__item:hover{
+/* TEST sélecteur a
+a.menu__item:hover{ */
+  a:hover{
     color: #ECEFF1;
     width: fit-content;
     background-color: black;
